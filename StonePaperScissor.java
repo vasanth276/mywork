@@ -2,6 +2,7 @@ import java.util.Random;
 import java.util.*;
 public class StonePaperScissor {
     public static void main(String[] args){
+        int choice=0;
         Random rand = new Random();
         Scanner in = new Scanner(System.in);
         int compInp=0;
@@ -10,7 +11,12 @@ public class StonePaperScissor {
         do{
             compInp = rand.nextInt(3);
             System.out.print("Enter the choice : ");
-            switch(in.nextInt()){
+            choice = in.nextInt();
+            if(choice==compInp){
+                System.out.println("DRAW MATCH");
+            }
+            else{
+            switch(choice){
                 case 1 :
                 if(compInp==1){
                     System.out.println("computer win");
@@ -41,6 +47,7 @@ public class StonePaperScissor {
                     userScore++;
                 }
                 break;
+            }
             }
             System.out.println("To end game press 0 : ");
 
