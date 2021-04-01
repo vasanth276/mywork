@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="Style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div class="head" id="outer_head">
+        <div class="name">
+            <img src="images/blog_profile.jpeg" style="object-fit: contain;" alt="">
+            <h1 onclick="this.innerHTML='😂🇮🤟'">MY BLOG</h1>
+        </div>
+        <div class="li_ele">
+            <ul>
+                <li><a href="#">Profile</a></li>
+                <li><a href="#">Content</a></li>
+                <li><a href="#">Reference</a></li>
+                    <div class="drop-down">
+                        <button type="dropbtn">Sign in</button>
+                        <div class="content">
+                              <li><a href="#">a</a></li>
+                            <li><a href="#">b</a></li>
+                            <li><a href="#">c</a></li>
+                            <li><a href="#">d</a></li>
+                        </div>
+                    </div>
+            </ul> 
+        </div>
+        <div class="search">
+            <input type="text" class="text" aria-label="Search" placeholder="Search">
+        </div>    
+    </div>
+     <div class="row1">
+        <div class="box1">
+            this is box one
+        </div>
+        <div class="box2">
+            this is box two
+        </div>
+        <div class="box3">
+            this is box three
+        </div>
+    </div>
+    <div id="text">
+        <p>
+            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dolore blanditiis animi culpa atque architecto sequi saepe rem, accusamus beatae minima aliquid officia voluptatum assumenda quisquam exercitationem voluptates, molestias tempore nihil?
+        </p>
+    </div>
+    <hr>
+    <button onclick="showtime()" id="btn">Show Time</button>
+    <div id="time">
+        <span><p id="show"></p></span>
+    </div>
+    <!-- validation -->
+    <div style="background-color: aliceblue;">
+        <form action=" ">
+            
+        </form>
+    </div>
+    <!-- javascript -->
+    <script>
+        function check_name(){
+            let name=document.getElementById("name").value;
+            let regex=/^[A-Za-z]+/;
+            if(regex.test(name)){
+                let str="Valid";
+                str=str.fontcolor("green");
+                document.getElementById("span_name").innerHTML=str;
+            }
+            else{
+                let str="InValid";
+                str=str.fontcolor("red");
+                document.getElementById("span_name").innerHTML=str;
+            }
+        }
+        function check_email(){
+            let email=document.getElementById("email").value;
+            let regex=/^[A-Za-z]+@/;
+            if(regex.test(email)){
+                let str="Valid";
+                str=str.fontcolor("green");
+                document.getElementById("span_email").innerHTML=str;
+            }
+            else{
+                let str="InValid";
+                str=str.fontcolor("red");
+                document.getElementById("span_email").innerHTML=str;
+            }
+        }
+        function check_number(){
+            let number=document.getElementById("number").value;
+            let regex=/^[0-9]{10}/;
+            if(regex.test(number)){
+                let str="Valid";
+                str=str.fontcolor("green");
+                document.getElementById("span_number").innerHTML=str;
+            }
+            else{
+                let str="InValid";
+                str=str.fontcolor("red");
+                document.getElementById("span_number").innerHTML=str;
+            }
+        }
+        function showtime(){
+            document.getElementById("show").innerHTML='vasanth kumar t';
+        }
+    </script>
+</body>
+</html>

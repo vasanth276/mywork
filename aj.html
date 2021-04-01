@@ -1,0 +1,329 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+  <link href="faqs.css" rel="stylesheet">
+  <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/js/bootstrap.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
+
+  <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet">
+  <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha256-MfvZlkHCEqatNoGiOXveE8FIwMzZg4W85qfrfIFBfYc= sha512-dTfge/zgoMYpP7QbHy4gWMEGsbsdZeCXz7irItjcC3sPUFtf0kuFbDz/ixG7ArTxmDjLXDmezHubeNikyKGVyQ=="
+    crossorigin="anonymous">
+  <link rel="stylesheet" type="text/css" href="aj.css">
+  <title>Agro Jobs</title>
+
+</head>
+
+<body style="background-image: url('ajimg.jpeg');background-repeat: no-repeat;background-size: cover;">
+
+  <nav class="navbar">
+    <ul>
+      <li id="home"><a href="C:\Users\tusha\Desktop\Project Bs\Main page\page.html" style="color: white;">Home</a></li>
+      <li id="about"><a href="C:\Users\tusha\Desktop\Project Bs\ContactUs\contactus.html" style="color: white;">Contact
+          Us</a></li>
+      <li id="contact"><a href="C:\Users\tusha\Desktop\Project Bs\Faq\faqs.html" style="color: white;">FAQ'S</a></li>
+    </ul>
+  </nav>
+  <div class="container" style="margin-top: 10%;width: 800px;">
+
+    <form class="formval" action=" " method="post" id="contact_form">
+      <fieldset>
+
+        <!-- Form Name -->
+        <legend>
+          <h2 style="text-align: center;"><b>Registration Form</b></h2>
+        </legend><br>
+
+        <!-- Text input-->
+        <div>
+            FirstName:<input id="name" type="text" placeholder="first name" onblur="check_name()"/><span id="span_name"></span><br>
+        </div>
+        <div>
+            LastName:<input id="lname" type="text" placeholder="last name" onblur="lcheck_name()"/><span id="lspan_name"></span><br>
+        </div>
+        <div>
+            Email: <input id="email" type="email" placeholder="email" onblur="check_email()"/><span id="span_email"></span><br>
+        </div>
+        <div id="type">
+            TypeOfJob: <select name="job" id="job" >
+                <option value="">Select</option>
+                <option value="">Part Time</option>
+                <option value="">Full Time</option>
+            </select>
+        </div>
+        <div id="pnumber">
+            Phone-number: <input id="number" type="number" onblur="check_number()"/><span id="span_number"></span><br>
+        </div>
+        <div id="submit">
+            <input type="submit">
+        </div>
+  </div>
+  <section class="accordion-section clearfix mt-3" aria-label="Question Accordions">
+    <div class="container">
+
+      <h2 style="text-align: center;padding: 10px;">Types of Agricultural Jobs</h2>
+
+      <br />
+      <br />
+      <div class="panel panel-default">
+        <div class="panel-heading p-3 mb-3" role="tab" id="heading1">
+          <h3 class="panel-title">
+            <a style="color: #4bb543;" class="collapsed" role="button" title="" data-toggle="collapse"
+              data-parent="#accordion" href="#collapse1" aria-expanded="true" aria-controls="collapse1">
+              Agricultural Salesperson
+            </a>
+          </h3>
+        </div>
+        <div id="collapse1" class="panel-collapse collapse" role="tabpanel" aria-labelledby="heading1">
+          <div class="panel-body px-3 mb-4">
+            <p> This professional sells farm machinery, equipment and other farm supplies to farmers. The major
+              components of their job include visiting various farms and marketing products at agricultural shows.</p>
+          </div>
+        </div>
+      </div>
+      <div class="panel-group" id="accordion" role="tablist" aria-multiselectable="true">
+        <div class="panel panel-default">
+          <div class="panel-heading p-3 mb-3" role="tab" id="heading0">
+            <h3 class="panel-title">
+              <a style="color: #4bb543;" class="collapsed" role="button" title="" data-toggle="collapse"
+                data-parent="#accordion" href="#collapse0" aria-expanded="true" aria-controls="collapse0">
+                Foresters
+              </a>
+            </h3>
+          </div>
+          <div id="collapse0" class="panel-collapse collapse" role="tabpanel" aria-labelledby="heading0">
+            <div class="panel-body px-3 mb-4">
+              <p> Foresters manage the national forests. These professionals oversee natural resources of forests, such
+                as trees, minerals, water and wildlife. They must take care of the economic, environmental, recreational
+                and conservational well being of range lands and forests. Some of the common job titles include
+                arborist, naturalist,forester, forest nursery manager or forestry district ranger.</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="panel panel-default">
+          <div class="panel-heading p-3 mb-3" role="tab" id="heading2">
+            <h3 class="panel-title">
+              <a style="color: #4bb543;" class="collapsed" role="button" title="" data-toggle="collapse"
+                data-parent="#accordion" href="#collapse2" aria-expanded="true" aria-controls="collapse2">
+                Agricultural Economist
+              </a>
+            </h3>
+          </div>
+          <div id="collapse2" class="panel-collapse collapse" role="tabpanel" aria-labelledby="heading2">
+            <div class="panel-body px-3 mb-4">
+              <p>This professional advises farm owners on efficient ways to make their agricultural enterprise more
+                profitable. They study all aspects of livestock and food production as well as the production process.
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="panel panel-default">
+          <div class="panel-heading p-3 mb-3" role="tab" id="heading3">
+            <h3 class="panel-title">
+              <a style="color: #4bb543;" class="collapsed" role="button" title="" data-toggle="collapse"
+                data-parent="#accordion" href="#collapse3" aria-expanded="true" aria-controls="collapse3">
+                Agronomist
+              </a>
+            </h3>
+          </div>
+          <div id="collapse3" class="panel-collapse collapse" role="tabpanel" aria-labelledby="heading3">
+            <div class="panel-body px-3 mb-4">
+              <p>The agronomists deal with the science of cultivating crops by investigating various aspects such as
+                fertilization, irrigation, crop management and harvesting. Educational establishments and manufacturers
+                of agriculture products often use this service.</p>
+            </div>
+          </div>
+        </div>
+        <div class="panel panel-default">
+          <div class="panel-heading p-3 mb-3" role="tab" id="heading4">
+            <h3 class="panel-title">
+              <a style="color: #4bb543;" class="collapsed" role="button" title="" data-toggle="collapse"
+                data-parent="#accordion" href="#collapse4" aria-expanded="true" aria-controls="collapse4">
+                Agricultural Inspector
+              </a>
+            </h3>
+          </div>
+          <div id="collapse4" class="panel-collapse collapse" role="tabpanel" aria-labelledby="heading4">
+            <div class="panel-body px-3 mb-4">
+              <p>Agricultural inspectors work for the government to enforce agricultural laws and regulations. Their
+                work includes collecting samples from animals, plants and agricultural products; interpreting
+                regulations to agricultural workers and farmers; ensuring good hygienic conditions at meat processing
+                plants and slaughterhouses; submitting written findings; and closing facilities that do not comply with
+                the set regulations.</p>
+            </div>
+          </div>
+        </div>
+        <div class="panel panel-default">
+          <div class="panel-heading p-3 mb-3" role="tab" id="heading5">
+            <h3 class="panel-title">
+              <a style="color: #4bb543;" class="collapsed" role="button" title="" data-toggle="collapse"
+                data-parent="#accordion" href="#collapse5" aria-expanded="true" aria-controls="collapse5">
+                Agricultural Manager
+              </a>
+            </h3>
+          </div>
+          <div id="collapse5" class="panel-collapse collapse" role="tabpanel" aria-labelledby="heading5">
+            <div class="panel-body px-3 mb-4">
+              <p>These agricultural jobs involve coordinating the operation of agricultural establishments, such as
+                farms,ranches, nurseries and timber tracts. They watch the market price of various agricultural products
+                and use that information to determine the crops to grow and the animals to raise. Moreover, they hire,
+                train, and supervise the laborers who perform the daily physical tasks in the farm, such as planting,
+                pruning, watering and harvesting plants as well as feeding and taking care of animals.</p>
+            </div>
+          </div>
+        </div>
+        <div class="panel panel-default">
+          <div class="panel-heading p-3 mb-3" role="tab" id="heading6">
+            <h3 class="panel-title">
+              <a style="color: #4bb543;" class="collapsed" role="button" title="" data-toggle="collapse"
+                data-parent="#accordion" href="#collapse6" aria-expanded="true" aria-controls="collapse6">
+                Agricultural Engineer
+              </a>
+            </h3>
+          </div>
+          <div id="collapse6" class="panel-collapse collapse" role="tabpanel" aria-labelledby="heading6">
+            <div class="panel-body px-3 mb-4">
+              <p>These experts are responsible for designing various equipment and tools that make the agricultural
+                world more efficient.The work of agricultural engineers can involve the development and renovation of
+                anything from tractors to grain storage facilities.</p>
+            </div>
+          </div>
+        </div>
+        <div class="panel panel-default">
+          <div class="panel-heading p-3 mb-3" role="tab" id="heading7">
+            <h3 class="panel-title">
+              <a style="color: #4bb543;" class="collapsed" role="button" title="" data-toggle="collapse"
+                data-parent="#accordion" href="#collapse7" aria-expanded="true" aria-controls="collapse7">
+                Agricultural Scientists
+              </a>
+            </h3>
+          </div>
+          <div id="collapse7" class="panel-collapse collapse" role="tabpanel" aria-labelledby="heading7">
+            <div class="panel-body px-3 mb-4">
+              <p>Agricultural scientists come up with ideas on how to improve agricultural methods by researching on
+                farm crops and animals. They can conduct basic studies on the chemical and biological processes of crop
+                livestock and crop growth or applied studies in which they monitor the safety of food products. Food
+                scientists use their knowledge in sciences, such chemistry and biotechnology, to work with food
+                industries and the government on how to improve food production. Common job titles under this category
+                include soil scientists, plant scientists or animal scientists.</p>
+            </div>
+          </div>
+        </div>
+        <div class="panel panel-default">
+          <div class="panel-heading p-3 mb-3" role="tab" id="heading8">
+            <h3 class="panel-title">
+              <a style="color: #4bb543;" class="collapsed" role="button" title="" data-toggle="collapse"
+                data-parent="#accordion" href="#collapse8" aria-expanded="true" aria-controls="collapse8">
+                Extension Specialist
+              </a>
+            </h3>
+          </div>
+          <div id="collapse8" class="panel-collapse collapse" role="tabpanel" aria-labelledby="heading8">
+            <div class="panel-body px-3 mb-4">
+              <p> This career usually requires at least a master’s degree in agriculture. Extension specialists work
+                with extension agents to conduct training programs on agricultural matters. These professionals update
+                local extension agents on recent news pertaining to their respective agricultural region. The
+                specialists can also develop materials for extension agents to circulate so as to inform the public
+                about new developments and how to implement them.</p>
+            </div>
+          </div>
+        </div>
+        <div class="panel panel-default">
+          <div class="panel-heading p-3 mb-3" role="tab" id="heading9">
+            <h3 class="panel-title">
+              <a style="color: #4bb543;" class="collapsed" role="button" title="" data-toggle="collapse"
+                data-parent="#accordion" href="#collapse9" aria-expanded="true" aria-controls="collapse9">
+                Agricultural journalist
+              </a>
+            </h3>
+          </div>
+          <div id="collapse9" class="panel-collapse collapse" role="tabpanel" aria-labelledby="heading10">
+            <div class="panel-body px-3 mb-4">
+              <p> Farmers need to be updated on the latest news and developments in agricultural field. Advances in
+                research, commodity price fluctuations and changes in government regulations are very important to
+                growers.Agricultural journalists write or broadcast on issues related to food production. Such
+                professionals can work at print publications, radio and television stations, commodity organizations and
+                farm machinery industries.Similarly, agricultural photographers shoot photos of crops, livestock and
+                farms and attach them to magazines and newspapers, or post them online.</p>
+            </div>
+          </div>
+        </div>
+        <p>
+        <h4>For more information <a href="https://www.monsterindia.com/search/agriculture-jobs-in-india"
+            style="color: #4bb543;">CLICK HERE</a></h4>
+        </p>
+      </div>
+
+    </div>
+  </section>
+  <script>
+    function check_name(){
+        let name=document.getElementById("name").value;
+        let regex=/^[A-Za-z]+/;
+        if(regex.test(name)){
+            let str="Valid";
+            str=str.fontcolor("green");
+            document.getElementById("span_name").innerHTML=str;
+        }
+        else{
+            let str="InValid";
+            str=str.fontcolor("red");
+            document.getElementById("span_name").innerHTML=str;
+        }
+    }
+    function check_email(){
+        let email=document.getElementById("email").value;
+        let regex=/^[A-Za-z]+@/;
+        if(regex.test(email)){
+            let str="Valid";
+            str=str.fontcolor("green");
+            document.getElementById("span_email").innerHTML=str;
+        }
+        else{
+            let str="InValid";
+            str=str.fontcolor("red");
+            document.getElementById("span_email").innerHTML=str;
+        }
+    }
+    function check_number(){
+        let number=document.getElementById("number").value;
+        let regex=/^[0-9]{10}$/;
+        if(regex.test(number)){
+            let str="Valid";
+            str=str.fontcolor("green");
+            document.getElementById("span_number").innerHTML=str;
+        }
+        else{
+            let str="InValid";
+            str=str.fontcolor("red");
+            document.getElementById("span_number").innerHTML=str;
+        }
+    }
+    function lcheck_name(){
+        let lname=document.getElementById("lname").value;
+        let regex=/^[A-Za-z]+/;
+        if(regex.test(lname)){
+            let str="Valid";
+            str=str.fontcolor("green");
+            document.getElementById("lspan_name").innerHTML=str;
+        }
+        else{
+            let str="InValid";
+            str=str.fontcolor("red");
+            document.getElementById("lspan_name").innerHTML=str;
+        }
+    }
+    function showtime(){
+        document.getElementById("show").innerHTML='vasanth kumar t';
+    }
+</script>
+
+</body>
+
+</html>

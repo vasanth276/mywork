@@ -1,0 +1,121 @@
+.head{
+    background-color:#343a40!important;
+}
+#outer_head {
+    border-radius: 0px;
+    display: inline-block;
+    margin: -8px;
+    position: fixed;
+    width:1440px;
+}
+.head li{
+    list-style: none;
+    display: inline-block;
+    margin-left:25px;
+    margin-right: 25px;
+    font-size: 26px;
+    font-weight: 100px;
+    border: border-box;
+}
+a{
+    text-decoration: none;
+    color: #a5b3c2;
+}
+.head li :hover{
+    color: azure;
+}
+.name h1{
+    vertical-align: middle;
+    display: inline-block;
+    padding:10px;
+    height:20px;
+    margin-top: 11px;
+    border: border-box;
+    margin-left: -2px;
+    color: white;
+}
+.name :hover{
+    transition: all 0.4s ease-in-out;
+    transform: rotate(360deg);
+}
+.head div{
+    display: inline-block;
+}
+.name{
+    width:300px;
+}
+.li_ele{
+    width:908px;
+    vertical-align: middle;
+}
+.search{
+    vertical-align: middle;
+    width:175px;
+    margin-right: 5px;
+    padding-right: -20px;
+}
+.search input{
+    float:right;
+    width:auto;
+    border-radius: 20px;
+    height:30px;
+    vertical-align: middle;
+    font-size: 18px;
+    padding-left: 10px;
+}
+.name img{
+    vertical-align: middle;
+    display: inline-block;
+    width: 35px;
+    border:border-box;
+    margin-left:20px;
+    border-radius: 50px;
+    height: 35px;
+}
+.row1 div{
+    opacity: 0.7;
+    height: 300px;
+    width: 300px;
+    display: inline-block;
+    background-color: white;
+    margin:80px 80px 0px 80px;
+    border-radius: 30px;
+    text-align: center;
+}
+.row1 :hover{
+    transform: scale(1.2);
+    transition: all 0.5s ease-in-out ;
+    border: 2px solid rgb(71, 54, 146);
+}
+#new{
+    background-color: black;
+    display: block;
+    vertical-align: bottom;
+}
+body{
+    background: rgba(255,255,255,0.902);
+    background-image: url('images/blog_bg.jpg');
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+}
+#text{
+    
+}
+.drop-down{
+    position: relative;
+    display: inline-block;
+}
+
+.content{
+    overflow: hidden;
+    position: absolute;
+    z-index: 1;
+    min-width: 10px;
+}
+.drop-down:hover .content{
+    display: block;
+}
+.time{
+    list-style: none;
+}
